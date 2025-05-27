@@ -1,0 +1,1018 @@
+.document-container {
+  padding: 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+.document-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.document-container p {
+  font-size: 17px;
+}
+.filter-checkboxes {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.document-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+.document-card {
+  width: 280px;
+  height: 120px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.document-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.document-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.document-date {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+.document-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.document-actions button,
+.document-actions a {
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 7px;
+}
+.preview-button {
+  background-color: #0080ff;
+  border: none;
+  cursor: pointer;
+}
+.download-button {
+  background-color: #808080;
+  border: none;
+  cursor: pointer;
+}
+.delete-button {
+  background-color: #ef4444;
+  border: none;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+.modal-content h3 {
+    font-size: 20px;    
+    font-weight: 700;       
+    margin-bottom: 8px;
+}
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+}
+.modal-preview-text {
+  max-height: 16rem;
+  overflow-y: auto;
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+}
+.modal-actions {
+  display: flex;
+  gap: 8px;
+}
+.play-button {
+    background-color: #22c55e;
+    padding-left: 12px;        
+    padding-right: 12px;
+    padding-top: 5px;        
+    padding-bottom: 5px;
+    border-radius: 4px; 
+    border: none;
+    cursor: pointer;
+}
+.read-button {
+    background-color: #0080ff;
+    padding-left: 12px;        
+    padding-right: 12px;
+    padding-top: 5px;        
+    padding-bottom: 5px;
+    border-radius: 4px; 
+    border: none;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 760px) and (max-width:991px) {
+.document-container {
+  padding: 14px;
+  max-width: 1000px;
+  margin: auto;
+}
+.document-heading {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.document-container p {
+  font-size: 14px;
+}
+.filter-checkboxes input {
+    width: 15px;
+    height: 15px;
+}
+.filter-checkboxes {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+.document-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+.document-card {
+  width: 250px;
+  height: 110px;
+  margin-left: 50px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 22px;
+}
+.document-card .document-title {
+  font-size: 19px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.document-date {
+  font-size: 13px;
+  color: #666;
+  margin-top: 5px;
+}
+.document-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.document-actions button,
+.document-actions a {
+  padding: 5px 9px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.preview-button {
+  background-color: #0080ff;
+  border: none;
+  cursor: pointer;
+}
+.download-button {
+  background-color: #808080;
+  border: none;
+  cursor: pointer;
+}
+.delete-button {
+  background-color: #ef4444;
+  border: none;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background-color: white;
+  padding: 21px;
+  border-radius: 8px;
+  max-width: 550px;
+  width: 90%;
+  position: relative;
+}
+.modal-content h3 {
+    font-size: 18px;          
+    margin-bottom: 8px;
+}
+.modal-close {
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #666;
+  cursor: pointer;
+}
+.modal-preview-text {
+  max-height: 14rem;
+  overflow-y: auto;
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 13px;
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+}
+.modal-actions {
+  display: flex;
+  gap: 7px;
+}
+.play-button {
+    background-color: #22c55e;
+    padding-left: 12px;        
+    padding-right: 12px;
+    padding-top: 5px;        
+    padding-bottom: 5px;
+    border-radius: 4px; 
+    border: none;
+    cursor: pointer;
+}
+.read-button {
+    background-color: #0080ff;
+    padding-left: 12px;        
+    padding-right: 12px;
+    padding-top: 5px;        
+    padding-bottom: 5px;
+    border-radius: 4px; 
+    border: none;
+    cursor: pointer;
+}
+}
+
+@media screen and (min-width: 620px) and (max-width:759px) {
+.document-container {
+  padding: 13px;
+  max-width: 850px;
+  margin: auto;
+}
+.document-heading {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.document-container p {
+  font-size: 15px;
+}
+.filter-checkboxes input {
+    width: 13px;
+    height: 13px;
+}
+.filter-checkboxes {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+.document-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.document-card {
+  width: 200px;
+  height: 100px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+}
+.document-card .document-title {
+  font-size: 17px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.document-date {
+  font-size: 11.5px;
+  color: #666;
+  margin-top: 5px;
+}
+.document-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.document-actions button,
+.document-actions a {
+  padding: 4px 7.5px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+}
+.preview-button {
+  background-color: #0080ff;
+}
+.download-button {
+  background-color: #808080;
+  border: none;
+  cursor: pointer;
+}
+.delete-button {
+  background-color: #ef4444;
+  border: none;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background-color: white;
+  padding: 18px;
+  border-radius: 8px;
+  max-width: 520px;
+  width: 72%;
+  position: relative;
+}
+.modal-content h3 {
+    font-size: 17px;          
+    margin-bottom: 10px;
+}
+.modal-close {
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #666;
+  cursor: pointer;
+}
+.modal-preview-text {
+  max-height: 12rem;
+  overflow-y: auto;
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  padding: 9px;
+  font-size: 11px;
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+}
+.modal-actions {
+  display: flex;
+  gap: 7px;
+  font-size: 11px;
+}
+.play-button {
+    background-color: #22c55e;
+    padding-left: 9px;        
+    padding-right: 9px;
+    padding-top: 4px;        
+    padding-bottom: 4px;
+    border-radius: 4px; 
+    border: none;
+    cursor: pointer;
+}
+.read-button {
+    background-color: #0080ff;
+    padding-left: 9px;        
+    padding-right: 9px;
+    padding-top: 4px;        
+    padding-bottom: 4px;
+    border-radius: 4px; 
+    border: none;
+    cursor: pointer;
+}
+}
+
+@media screen and (min-width: 500px) and (max-width:619px) {
+.document-container {
+  padding: 11.5px;
+  max-width: 780px;
+  margin: auto;
+}
+.document-heading {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.document-container p {
+  font-size: 13.5px;
+}
+.filter-checkboxes input {
+    width: 11px;
+    height: 11px;
+}
+.filter-checkboxes {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 26px;
+  font-size: 12px;
+}
+.document-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.document-card {
+  width: 160px;
+  height: 90px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 26px;
+}
+.document-card .document-title {
+  font-size: 15px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.document-date {
+  font-size: 10px;
+  color: #666;
+  margin-top: 5px;
+}
+.document-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.document-actions button,
+.document-actions a {
+  padding: 3.5px 6.5px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 9.5px;
+}
+.preview-button {
+  background-color: #0080ff;
+}
+.download-button {
+  background-color: #808080;
+  border: none;
+  cursor: pointer;
+}
+.delete-button {
+  background-color: #ef4444;
+  border: none;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background-color: white;
+  padding: 18px;
+  border-radius: 8px;
+  max-width: 520px;
+  width: 66%;
+  position: relative;
+}
+.modal-content h3 {
+    font-size: 15px;          
+    margin-bottom: 10px;
+}
+.modal-close {
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #666;
+  cursor: pointer;
+}
+.modal-preview-text {
+  max-height: 12rem;
+  overflow-y: auto;
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 9.5px;
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+}
+.modal-actions {
+  display: flex;
+  gap: 7px;
+}
+.play-button {
+    background-color: #22c55e;
+    padding-left: 7px;        
+    padding-right: 7px;
+    padding-top: 4px;        
+    padding-bottom: 4px;
+    border-radius: 4px; 
+    font-size: 9.5px;
+}
+.read-button {
+    background-color: #0080ff;
+    padding-left: 7px;        
+    padding-right: 7px;
+    padding-top: 4px;        
+    padding-bottom: 4px;
+    border-radius: 4px; 
+    font-size: 9.5px;
+}
+}
+
+@media screen and (min-width: 450px) and (max-width:499px) {
+.document-container {
+  padding: 10px;
+  max-width: 750px;
+  margin: auto;
+}
+.document-heading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.document-container p {
+  font-size: 12px;
+}
+.filter-checkboxes input {
+    width: 10px;
+    height: 10px;
+}
+.filter-checkboxes {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 26px;
+  font-size: 10px;
+}
+.document-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.document-card {
+  width: 160px;
+  height: 90px;
+  margin-left: 110px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 26px;
+}
+.document-card .document-title {
+  font-size: 15px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.document-date {
+  font-size: 10px;
+  color: #666;
+  margin-top: 5px;
+}
+.document-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.document-actions button,
+.document-actions a {
+  padding: 3.5px 6.5px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 9.5px;
+}
+.preview-button {
+  background-color: #0080ff;
+}
+.download-button {
+  background-color: #808080;
+  border: none;
+  cursor: pointer;
+}
+.delete-button {
+  background-color: #ef4444;
+  border: none;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background-color: white;
+  padding: 18px;
+  border-radius: 8px;
+  max-width: 520px;
+  width: 66%;
+  position: relative;
+}
+.modal-content h3 {
+    font-size: 15px;          
+    margin-bottom: 10px;
+}
+.modal-close {
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #666;
+  cursor: pointer;
+}
+.modal-preview-text {
+  max-height: 12rem;
+  overflow-y: auto;
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 9.5px;
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+}
+.modal-actions {
+  display: flex;
+  gap: 7px;
+}
+.play-button {
+    background-color: #22c55e;
+    padding-left: 7px;        
+    padding-right: 7px;
+    padding-top: 4px;        
+    padding-bottom: 4px;
+    border-radius: 4px; 
+    font-size: 9.5px;
+}
+.read-button {
+    background-color: #0080ff;
+    padding-left: 7px;        
+    padding-right: 7px;
+    padding-top: 4px;        
+    padding-bottom: 4px;
+    border-radius: 4px; 
+    font-size: 9.5px;
+}
+}
+
+@media screen and (min-width: 360px) and (max-width:449px) {
+.document-container {
+  padding: 10px;
+  max-width: 750px;
+  margin: auto;
+}
+.document-heading {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.document-container p {
+  font-size: 11px;
+}
+.filter-checkboxes input {
+    width: 10px;
+    height: 10px;
+}
+.filter-checkboxes {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 26px;
+  font-size: 10px;
+}
+.document-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.document-card {
+  width: 160px;
+  height: 90px;
+  margin-left: 80px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 26px;
+}
+.document-card .document-title {
+  font-size: 14px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.document-date {
+  font-size: 9px;
+  color: #666;
+  margin-top: 5px;
+}
+.document-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.document-actions button,
+.document-actions a {
+  padding: 3px 5.5px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 8.5px;
+}
+.preview-button {
+  background-color: #0080ff;
+}
+.download-button {
+  background-color: #808080;
+  border: none;
+  cursor: pointer;
+}
+.delete-button {
+  background-color: #ef4444;
+  border: none;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background-color: white;
+  padding: 18px;
+  border-radius: 8px;
+  max-width: 510px;
+  width: 64%;
+  position: relative;
+}
+.modal-content h3 {
+    font-size: 14px;          
+    margin-bottom: 10px;
+}
+.modal-close {
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #666;
+  cursor: pointer;
+}
+.modal-preview-text {
+  max-height: 10rem;
+  overflow-y: auto;
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 9.5px;
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+}
+.modal-actions {
+  display: flex;
+  gap: 7px;
+}
+.play-button {
+    background-color: #22c55e;
+    padding-left: 5.5px;        
+    padding-right: 5.5px;
+    padding-top: 3px;        
+    padding-bottom: 3px;
+    border-radius: 4px; 
+    font-size: 9.5px;
+}
+.read-button {
+    background-color: #0080ff;
+    padding-left: 5.5px;        
+    padding-right: 5.5px;
+    padding-top: 3px;        
+    padding-bottom: 3px;
+    border-radius: 4px; 
+    font-size: 9.5px;
+}
+}
+
+@media screen and (min-width: 300px) and (max-width:359px) {
+.document-container {
+  padding: 10px;
+  max-width: 750px;
+  margin: auto;
+}
+.document-heading {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.document-container p {
+  font-size: 10px;
+}
+.filter-checkboxes input {
+    width: 8px;
+    height: 8px;
+}
+.filter-checkboxes {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 26px;
+  font-size: 9px;
+}
+.document-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.document-card {
+  width: 145px;
+  height: 80px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 26px;
+}
+.document-card .document-title {
+  font-size: 13px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.document-date {
+  font-size: 8px;
+  color: #666;
+  margin-top: 5px;
+}
+.document-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.document-actions button,
+.document-actions a {
+  padding: 3px 6px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 8px;
+}
+.preview-button {
+  background-color: #0080ff;
+}
+.download-button {
+  background-color: #808080;
+  border: none;
+  cursor: pointer;
+}
+.delete-button {
+  background-color: #ef4444;
+  border: none;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background-color: white;
+  padding: 18px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 64%;
+  position: relative;
+}
+.modal-content h3 {
+    font-size: 13px;          
+    margin-bottom: 10px;
+}
+.modal-close {
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #666;
+  cursor: pointer;
+}
+.modal-preview-text {
+  max-height: 10rem;
+  overflow-y: auto;
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 6.5px;
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+}
+.modal-actions {
+  display: flex;
+  gap: 7px;
+}
+.play-button {
+    background-color: #22c55e;
+    padding-left: 5px;        
+    padding-right: 5px;
+    padding-top: 3px;        
+    padding-bottom: 3px;
+    border-radius: 4px; 
+    font-size: 7.5px;
+}
+.read-button {
+    background-color: #0080ff;
+    padding-left: 5px;        
+    padding-right: 5px;
+    padding-top: 3px;        
+    padding-bottom: 3px;
+    border-radius: 4px; 
+    font-size: 7.5px;
+}
+}

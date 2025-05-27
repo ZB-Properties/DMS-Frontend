@@ -1,0 +1,130 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  background-color: none;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  animation: fadein 0.3s ease, fadeout 0.3s ease 2.7s;
+}
+
+.toast.success {
+  background-color: #28a745;
+  font-size: 18px;
+}
+
+.toast.error {
+  background-color: #dc3545;
+  font-size: 18px;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+
+@media screen and (min-width: 600px) and (max-width:991px) {
+.toast {
+  position: fixed;
+  top: 18px;
+  right: 35px;
+  background-color: none;
+  color: white;
+  padding: 14px 17px;
+  border-radius: 5px;
+  z-index: 1000;
+  animation: fadein 0.3s ease, fadeout 0.3s ease 2.7s;
+}
+.toast.success {
+  background-color: #28a745;
+  font-size: 16px;
+}
+
+.toast.error {
+  background-color: #dc3545;
+  font-size: 16px;
+}
+}
+
+@media screen and (min-width: 500px) and (max-width:599px) {
+.toast {
+  position: fixed;
+  top: 18px;
+  right: 35px;
+  background-color: none;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 5px;
+  z-index: 1000;
+  animation: fadein 0.3s ease, fadeout 0.3s ease 2.7s;
+}
+.toast.success {
+  background-color: #28a745;
+  font-size: 13px;
+}
+
+.toast.error {
+  background-color: #dc3545;
+  font-size: 13px;
+}
+}
+
+@media screen and (min-width: 400px) and (max-width:499px) {
+.toast {
+  position: fixed;
+  top: 18px;
+  right: 35px;
+  background-color: none;
+  color: white;
+  padding: 9px 11px;
+  border-radius: 5px;
+  z-index: 1000;
+  animation: fadein 0.3s ease, fadeout 0.3s ease 2.7s;
+}
+.toast.success {
+  background-color: #28a745;
+  font-size: 11px;
+}
+.toast.error {
+  background-color: #dc3545;
+  font-size: 11px;
+}
+}
+
+@media screen and (min-width: 300px) and (max-width:399px) {
+.toast {
+  position: fixed;
+  top: 18px;
+  right: 35px;
+  background-color: none;
+  color: white;
+  padding: 7px 9px;
+  border-radius: 5px;
+  z-index: 1000;
+  animation: fadein 0.3s ease, fadeout 0.3s ease 2.7s;
+}
+.toast.success {
+  background-color: #28a745;
+  font-size: 9px;
+}
+.toast.error {
+  background-color: #dc3545;
+  font-size: 9px;
+}
+}
