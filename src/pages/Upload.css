@@ -147,8 +147,8 @@
 }
 @media screen and (min-width: 300px) and (max-width:499px) {
 .upload {
-  max-width: 200px;  
-  height: 140px;    
+  max-width: 220px;  
+  height: 150px;    
   margin-left: auto;     
   margin-right: auto;
   margin-top: 70px;     
@@ -166,16 +166,16 @@
     margin-bottom: 8px; 
 }
 .upload .input {
-   width: 75%;             
+   width: 77%;             
    padding: 10px;   
-   font-size: 10px;      
+   font-size: 9px;      
    border: 1px solid darkgray;
    border-radius: 4px; 
    margin-bottom: 10px;
    cursor: pointer;
 }
 .upload-button {
-  width: 29%;     
+  width: 31%;     
   height: 31px;         
   background-color: #0080ff; 
   color: white;   
