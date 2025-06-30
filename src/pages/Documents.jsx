@@ -126,12 +126,14 @@ const api = import.meta.env.VITE_API_URL;
               <h3 className="document-title">{doc.originalName || doc.name}</h3>
               <p className="document-date">Uploaded: {formatDate(doc.uploadDate || doc.uploadedAt)}</p>
               <div className="document-actions">
-                <button onClick={() => handlePreview(doc)} className="preview-button">
+                <button onClick={() => handlePreview(doc)} className="preview-button" target="_blank" rel="noopener noreferrer">
                   Preview
                 </button>
                 <a
                   href={`${api}/api/upload/${doc.filename}`}
                   className="download-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   download
                 >
                   Download
